@@ -1,35 +1,22 @@
-<section class="phx-hero">
-  <h1><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h1>
-  <p>A productive web framework that<br/>does not compromise speed or maintainability.</p>
-</section>
+<div class="row">
+  <div class="col-md-12">
+    Hello There, <span id="user"><% @conn.params["user"] %> </span>
+  </div>
 
-<section class="row">
-  <article class="column">
-    <h2>Resources</h2>
-    <ul>
-      <li>
-        <a href="https://hexdocs.pm/phoenix/overview.html">Guides &amp; Docs</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix/blob/v1.4/CHANGELOG.md">v1.4 Changelog</a>
-      </li>
+
+  <div class="col-md-8">
+    <h3>Messages:</h3>
+    <ul id="messageList" class="list-unstyled">
+
     </ul>
-  </article>
-  <article class="column">
-    <h2>Help</h2>
-    <ul>
-      <li>
-        <a href="https://elixirforum.com/c/phoenix-forum">Forum</a>
-      </li>
-      <li>
-        <a href="https://webchat.freenode.net/?channels=elixir-lang">#elixir-lang on Freenode IRC</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/elixirphoenix">Twitter @elixirphoenix</a>
-      </li>
+    <input type="text" id="newMessage" class="form-control">
+  
+  </div>
+
+  <div class="col-md-4">
+    <h3>Users Online:</h3>
+    <ul id="userlist" class="list-styled">
+      <li></li>
     </ul>
-  </article>
-</section>
+  </div>
+</div>
