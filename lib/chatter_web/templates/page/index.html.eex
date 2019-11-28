@@ -15,7 +15,7 @@
 
   <div class="col-md-4">
     <h3>Users Online:</h3>
-    <ul id="userlist" class="list-styled">
+    <ul id="userlist" class="list-unstyled">
       <li></li>
     </ul>
   </div>
